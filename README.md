@@ -4,7 +4,7 @@ A simple framework for data harmonization.
 Currently, the data pipeline includes the following steps:
 1. **Sourcing**: Fetching or subscribing to data from multiple sources.
 2. **Converting (SerDes)**: Converting JSON, Avro, etc., to Java POJOs.
-3. **Pre-filtering**: Applying a filter specific to each source.
+3. **Pre-filtering**: Applying a source-specific filter.
 4. **Normalizing**: Normalizing the data to a common format.
 5. **Merging**: Merging normalized records based on defined strategies.
 6. **Consuming**: Passing the harmonized data to one or more listeners.

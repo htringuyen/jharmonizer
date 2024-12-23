@@ -1,13 +1,8 @@
 package io.javaside.jharmonizer.kaligosample.app;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.javaside.jharmonizer.HarmonizationListener;
-import io.javaside.jharmonizer.HarmonizedRecord;
 import io.javaside.jharmonizer.Harmonizer;
 import io.javaside.jharmonizer.JHarmonizerException;
-import io.javaside.jharmonizer.common.StaticDependency;
-import io.javaside.jharmonizer.kaligosample.model.Kaligo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -68,10 +63,6 @@ public class HarmonizerRunner<K, V> implements Closeable {
 
     public static <K, V> HarmonizerRunner<K, V> createUsing(Properties props, HarmonizationListener<K, V> listener) {
         return new HarmonizerRunner<>(props, listener);
-    }
-
-    private void printString(String str) {
-        System.out.println(str);
     }
 }
 
